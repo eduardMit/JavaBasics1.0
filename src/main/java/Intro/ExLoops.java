@@ -1,5 +1,5 @@
 package Intro;
-
+import java.util.Scanner;
 public class ExLoops {
 
      /*
@@ -8,6 +8,23 @@ public class ExLoops {
        If they are different, print "Incorrect password. Please try again" until the correct answer is introduced
        If they are not different, print "Login successful"
     */
+        public static void main(String[] args) {
+            String Password = "Aluna";
+            Scanner scan1 = new Scanner(System.in);
+
+            while (true) {
+                System.out.print("Enter password: ");
+                String password = scan1.nextLine();
+
+                if (password.equals(Password)) {
+                    System.out.println("Login successful");
+                    break;
+                } else {
+                    System.out.println("Incorrect password. Please try again");
+                }
+            }
+        }
+    }
 
 
-}
+
