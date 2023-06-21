@@ -4,7 +4,7 @@ import java.io.File;
 
 public class DeleteFiles {
 
-    private static String localFolder = "C:\\Users\\edumit\\Downloads\\Courses\\Software Developer";
+    private static String localFolder = "C:\\Users\\eduar\\Downloads\\Courses\\Software Developer";
 
     public static void main(String[] args) {
 
