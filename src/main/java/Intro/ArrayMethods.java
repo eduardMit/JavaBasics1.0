@@ -54,14 +54,12 @@ public class ArrayMethods {
         }
 
         // 7. List
-
         List<String> list = Arrays.asList(webServices);
         for (String s : list) {
             System.out.println(s + " ");
         }
 
         // 8. ArrayList
-
         final ArrayList<String> bloodType = new ArrayList<>();
         bloodType.add("A");
         bloodType.add("B");
@@ -79,6 +77,15 @@ public class ArrayMethods {
 
         if (bloodType.contains(userType)){
             System.out.println("Selected blood type is: " + userType);
+        }
+
+        scan1.close();
+
+        // 9. Remove element from an Array (with ArrayList and asList)
+        ArrayList<String> aList = new ArrayList(Arrays.asList(webServices));
+        aList.remove(1);
+        for (String i : aList) {
+            System.out.println(aList);
         }
 
     }
