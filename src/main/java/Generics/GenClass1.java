@@ -1,6 +1,6 @@
 package Generics;
 
-public class GenClass1 <T>{
+public class GenClass1<T> {
 
     T v1;
 
@@ -8,7 +8,7 @@ public class GenClass1 <T>{
         this.v1 = v1;
     }
 
-    public T getVal (){
+    public T getVal(){
         return v1;
     }
 

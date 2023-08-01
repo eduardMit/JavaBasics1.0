@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class ExcelProject{
 
     public static void main(String[] args) {
-        String folderPath = "C:\\Users\\Cristi\\Documents\\Curs programare\\Excell Project";
+        String folderPath = "C:\\Users\\eduar\\Downloads\\test.xlsx";
         Scanner scan1 = new Scanner(System.in);
         System.out.println("Please enter the the word you are looking for: ");
         String searchText = scan1.nextLine();
