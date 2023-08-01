@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class SearchInExcelFiles {
     public static void main(String[] args) {
-        String searchWord = "cuvântul";
-        String folderPath = "C:\\Users\\eduar\\Downloads\\data.xlms";
+        String searchWord = "next";
+        String folderPath = "C:\\Users\\eduar\\Downloads\\test.xlsx";
 
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
@@ -27,7 +27,7 @@ public class SearchInExcelFiles {
 
     private static void searchInExcelFile(File file, String searchWord) {
         try (FileInputStream fis = new FileInputStream(file);
-             Workbook workbook = WorkbookFactory.create(fis)) {
+            Workbook workbook = WorkbookFactory.create(fis)) {
 
             for (Sheet sheet : workbook) {
                 for (Row row : sheet) {
