@@ -20,7 +20,7 @@ public class MainList {
 
 
         // Remove an element
-        arrList1.remove("E2");
+        //arrList1.remove("E2");
         System.out.println(arrList1);
 
 
@@ -33,6 +33,10 @@ public class MainList {
         }
 
 
+        // Size of ArrayList
+
+        int size = arrList1.size();
+        System.out.println(size);
 
 
     }

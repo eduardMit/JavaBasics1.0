@@ -1,45 +1,39 @@
-package Encapsulation;
+package Encapsulations;
 
 public class ExEmployee {
 
     // Create Employee ID and Salary in the Encapsulations.ExEmployee class
     // Using Encapsulation, give values to Employee ID and Salary in a different class, then print those new values
 
-        private int employeeId;
-        private double salary;
+    private int employeeId;
+    private int salary;
 
-        public int getEmployeeId() {
-            return employeeId;
-        }
-
-        public void setEmployeeId(int employeeId) {
-            this.employeeId = employeeId;
-        }
-
-        public double getSalary() {
-            return salary;
-        }
-
-        public void setSalary(double salary) {
-            this.salary = salary;
-        }
+    public int getId() {
+        return employeeId;
     }
+    public void setId(int id) {
+        this.employeeId = id;
+    }
+    public double getSal() {
+        return salary;
+    }
+    public void setSal(int sal) {
+        this.salary = sal;
+    }
+}
+class Execute{
 
-class Execute {
+    public static void main(String[] args) {
 
-    public class Main {
-        public static void main(String[] args) {
-            // Create an instance of ExEmployee
-            ExEmployee employee = new ExEmployee();
+        ExEmployee emp = new ExEmployee();
 
-            // Set employee ID and salary using the setter methods
-            employee.setEmployeeId(12345);
-            employee.setSalary(50000.0);
+        //Set values using setter methods
+        emp.setId(45);
+        emp.setSal(1500);
 
-            // Print the values using the getter methods
-            System.out.println("Employee ID: " + employee.getEmployeeId());
-            System.out.println("Salary: $" + employee.getSalary());
-        }
+        //Print values using getter methods
+        System.out.println("Employee Information: " + "\nEmployee ID: " + emp.getId()
+                            + "\nEmployee Salary: " + emp.getSal());
     }
 
 }

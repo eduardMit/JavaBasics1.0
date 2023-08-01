@@ -1,7 +1,8 @@
 package Objects;
 
-public class ExObjects {
+import java.time.LocalDate;
 
+public class ExObjects {
     /*
     Create a "Student" class that has the following attributes:
     - First name
@@ -14,18 +15,25 @@ public class ExObjects {
     Calculate his age with a method and print the result in the following format: "Age: (result of the calculation)"
     Print out the full phone number: "Phone number: 0xxxxxxxxx"
     */
-        public static void main(String[] args) {
 
-            Student student = new Student("Eduard", "Mihai", 1998, "742028758");
+    public static void main(String [] args){
 
-            // Print the full name
-            System.out.println("Full name: " + student.getFullName());
+        Student myEntry = new Student();
 
-            // Calculate and print the age
-            System.out.println("Age: " + student.getAge());
+        myEntry.firstName = "Mircea";
+        myEntry.lastName = "Voina";
+        myEntry.birthYear = 1990;
+        myEntry.number = "0749035459";
+        //myEntry.phoneNr = 749035459l;
 
-            // Print the full phone number
-            System.out.println(student.getFullPhoneNumber());
-        }
+
+        System.out.println("Full name: " + myEntry.firstName + " " + myEntry.lastName);
+        age(myEntry.birthYear);
+        System.out.println("Phone number: " + myEntry.number);
+        //System.out.println("Phone number: 0" + myEntry.phoneNr);
     }
 
+    public static void age(int year){
+        System.out.println("Age: " + (LocalDate.now().getYear() - year));
+    }
+}
